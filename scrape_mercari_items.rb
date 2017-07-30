@@ -20,4 +20,5 @@ doc.xpath('//section[@class="items-box"]').each do |item|
   p item.css('h3').inner_text #商品名
   p item.css('div.items-box-price').inner_text #商品価格
   p item.css('p.item-box-tax').inner_text #税
+  p item.css('div.item-sold-out-badge').inner_text #SOLDOUT
 end
